@@ -1,0 +1,48 @@
+<!-- html5 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>script tag</title>
+  </head>
+  <body>
+    <form onsubmit="event.preventDefault(); calc();">
+      <input
+        type="number"
+        name="number1"
+        id="number1"
+        placeholder="enter number 1"
+        required
+      />
+      <br />
+      <input
+        type="number"
+        name="number2"
+        id="number2"
+        placeholder="enter number 2"
+        required
+      />
+      <br />
+      <input type="submit" value="add" />
+    </form>
+    <br />
+    <p id="result">the result is:</p>
+    <script>
+      function calc() {
+        //   get numbers
+        const num1 = +document.getElementById("number1").value;
+        const num2 = +document.getElementById("number2").value;
+        console.log(num1, num2);
+        // get result field
+        const resField = document.getElementById("result");
+        // add them
+        const result = num1 + num2;
+        // append the result
+        resField.innerHTML = "the result is: " + result;
+        console.log("ok");
+      }
+    </script>
+  </body>
+</html>
