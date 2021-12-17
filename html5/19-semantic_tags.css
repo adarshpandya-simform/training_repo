@@ -36,6 +36,7 @@ li {
 }
 
 section {
+  height: 100%;
   margin: 0 50px;
 }
 
@@ -44,6 +45,8 @@ article {
 }
 
 footer {
+  position: sticky;
+  bottom: 0 !important;
   background: #333;
   padding: 30px;
 }
