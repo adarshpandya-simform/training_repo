@@ -60,12 +60,15 @@
     <input type="submit" value="submit" />
   </form>
   <script>
+    // set the date as today, as an when site is loaded
     document.getElementById("birthdate").value = new Date()
       .toISOString()
       .substring(0, 10);
 
+      // helper function to show details
     function helperFunc() {
       let info = ''
+      // get the user information throught getElementById();
       const name = document.getElementById('name').value;
       const last_name = document.getElementById('last_name').value;
       const email = document.getElementById('email').value;
@@ -75,7 +78,10 @@
       const female = document.getElementById('female').checked
       const others = document.getElementById('others').checked
       const bdate = document.getElementById('birthdate').value
+      // append all info
       info += `Name : ${name}\nEmail : ${email}\nPassword : ${password}\nBirth Date : ${bdate}\nDepartment : ${dept}`
+
+      // check gender and append
       if (male) {
         info += '\nGender : male';
       }
@@ -85,6 +91,7 @@
       if (others) {
         info += '\nGender : others'
       }
+      // show info
       alert(info)
     }
   </script>
