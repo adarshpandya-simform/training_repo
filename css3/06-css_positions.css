@@ -1,0 +1,68 @@
+body{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+}
+
+.static{
+    position: static;
+    border: 1px solid black;
+    background: rgb(101, 136, 241);
+    width: 99.5%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+
+/* An element with position: relative; is positioned relative to its normal position.
+
+Setting the top, right, bottom, and left properties of a relatively-positioned element will cause it to be adjusted away from its normal position.  */
+.relative-parent{
+    width: 100%;
+    background:red;
+}
+.relative{
+    position: relative;
+    left: 5%;
+    border: 1px solid black;
+    background: rgb(239, 241, 101);
+    width: 30%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+
+/* An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed). */
+.absolute{
+    position: absolute;
+    top: 0;
+    height: 50px;
+    background: teal;
+    color: whitesmoke;
+    width: 30%;
+    box-shadow: 0px 0px 5px white;
+}
+
+/* relative to view port, stays on same place */
+.fixed{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 50px;
+    background: tomato;
+    color: black;
+    width: 30%;
+    box-shadow: 0px 0px 5px black;
+}
+
+.sticky{
+    position: sticky;
+    bottom: 0;
+    border: 1px solid black;
+    background: rgb(241, 101, 159);
+    width: 99.5%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
