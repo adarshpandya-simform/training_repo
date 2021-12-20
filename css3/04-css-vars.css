@@ -24,6 +24,8 @@ body{
 
 table{
     /* using colors with var() function */
+    /* overriding variable value */
+    --border-color:white;
     border: 1px dashed var(--border-color);
 }
 
