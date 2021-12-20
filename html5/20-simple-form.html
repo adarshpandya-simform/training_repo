@@ -9,9 +9,21 @@
   </head>
   <body>
     <!-- form tag -->
-    <form onsubmit="alert('submitted')">
+    <form
+      onsubmit="event.preventDefault(); alert(this[0].value+' '+this[1].value)"
+    >
       <label for="name">name</label> <br />
-      <input type="text" name="name" id="name" />
+      <input type="text" name="name" id="name" placeholder="Enter Name" />
+      <br />
+      <label for="Last Name">Last Name</label> <br />
+      <input
+        type="text"
+        name="Last Name"
+        id="Last Name"
+        placeholder="Enter LastName"
+      />
+      <br />
+      <input type="submit" value="submit" />
     </form>
   </body>
 </html>
