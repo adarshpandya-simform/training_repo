@@ -11,11 +11,11 @@ updates for 20-dec: <br>
     
     - started with css3
     - learnt about id,class
-    - exploed states of elements (active,focus,hover)
+    - explored states of elements (active,focus,hover)
     - tried relative selectors
     - read about box model
     - implemented example of bos sizing
     - learnt about css positions
-    - tried css3 variabels (vars())
+    - tried css3 variabels using var()
     - read about css3 features
     - created a PR 
