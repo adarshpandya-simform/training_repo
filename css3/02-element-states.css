@@ -5,7 +5,7 @@ html,body{
     width: 100%;
 }
 
-
+/* normal button styles */
 #styled-button{
     margin: 20px;
     border-width: 0px;
@@ -20,16 +20,19 @@ html,body{
     transition: all 300ms ease-in-out;
 }
 
+/* button hover state*/
 #styled-button:hover{
     background: rgb(76, 38, 114);
     transform: scale(1.01);
 }
 
+/* button active state */
 #styled-button:active{
     background: plum;
     color: black;
 }
 
+/* button focus state */
 #styled-button:focus{
     background: teal;
     color: white;
