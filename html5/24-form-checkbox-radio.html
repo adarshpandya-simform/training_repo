@@ -8,7 +8,7 @@
     <title>Checkbox,Radio button</title>
   </head>
   <body>
-    <form onsubmit="event.preventDefault(); console.log(this['gender'].value+' '+String(document.getElementsByClassName('hobbies').checked));">
+    <form onsubmit="event.preventDefault(); helperFunc()">
       <fieldset>
         <legend>gender</legend>
         <label for="gender">gender : </label>
@@ -42,5 +42,21 @@
       </fieldset>
       <input type="submit" value="submit" />
     </form>
+    <script>
+        function helperFunc(){
+            const male = document.getElementById('male').checked
+            const female = document.getElementById('female').checked
+            const others = document.getElementById('others').checked
+            if(male)
+            {
+                console.log('male is checked')
+            }else if(female)
+            {
+                console.log('female is checked')
+            }else{
+                console.log('others is checked')
+            }
+        }
+    </script>
   </body>
 </html>
