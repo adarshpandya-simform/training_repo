@@ -14,7 +14,7 @@ updates for 20-dec: <br>
     - explored states of elements (active,focus,hover)
     - tried relative selectors
     - read about box model
-    - implemented example of bos sizing
+    - implemented example of box sizing
     - learnt about css positions
     - tried css3 variabels using var()
     - read about css3 features
