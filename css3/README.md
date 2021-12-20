@@ -1,5 +1,21 @@
 ## CSS3 Practice from course (html/css course lms) (20-dec)
 
-- positions
-- box sizing
-- display
+<hr>
+Started on : 20-12-2021<br>
+Mentor : Mitul <br>
+Training Coordinaor: Bhumika<br>
+Team Manager : Mehul Pandya
+<hr>
+
+updates for 20-dec: <br>
+    
+    - started with css3
+    - learnt about id,class
+    - exploed states of elements (active,focus,hover)
+    - tried relative selectors
+    - read about box model
+    - implemented example of bos sizing
+    - learnt about css positions
+    - tried css3 variabels (vars())
+    - read about css3 features
+    - created a PR 
