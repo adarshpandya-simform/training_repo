@@ -1,0 +1,38 @@
+/* defining all variables in :root */
+:root{
+    --background:#1abc9c;
+    --text:#fff;
+    --table-header:#e67e22;
+    --table-data:#34495e;
+    --border-color:gray;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* using colors with var() */
+    background: var(--background);
+    /* using colors with var() */
+    color: var(--text);
+}
+
+table{
+    /* using colors with var() */
+    border: 1px dashed var(--border-color);
+}
+
+th{
+    /* using colors with var() */
+    background: var(--table-header);
+}
+
+td{
+    /* using colors with var() */
+    background: var(--table-data);
+}
