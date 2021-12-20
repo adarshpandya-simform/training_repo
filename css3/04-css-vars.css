@@ -16,23 +16,23 @@ body{
     justify-content: center;
     align-items: center;
     text-align: center;
-    /* using colors with var() */
+    /* using colors with var() function */
     background: var(--background);
-    /* using colors with var() */
+    /* using colors with var() function */
     color: var(--text);
 }
 
 table{
-    /* using colors with var() */
+    /* using colors with var() function */
     border: 1px dashed var(--border-color);
 }
 
 th{
-    /* using colors with var() */
+    /* using colors with var() function */
     background: var(--table-header);
 }
 
 td{
-    /* using colors with var() */
+    /* using colors with var() function */
     background: var(--table-data);
 }
