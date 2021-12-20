@@ -1,0 +1,46 @@
+<!-- html5 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkbox,Radio button</title>
+  </head>
+  <body>
+    <form onsubmit="event.preventDefault(); console.log(this['gender'].value+' '+String(document.getElementsByClassName('hobbies').checked));">
+      <fieldset>
+        <legend>gender</legend>
+        <label for="gender">gender : </label>
+        <input type="radio" name="gender" id="gender" value="male" required>
+        male
+        </input>
+        
+        <input type="radio" name="gender" id="gender" value="female">
+        female
+        </input>
+        
+        <input type="radio" name="gender" id="gender" value="others">
+        others
+        </input> 
+      </fieldset>
+      <br>
+      <fieldset>
+        <legend>Hobbies</legend>
+        <label for="Hobbies">Hobbies : </label>
+        <input type="checkbox" name="hobbies[]" class="hobbies" value="Reading">
+        Reading
+        </input>
+        
+        <input type="checkbox" name="hobbies[]" class="hobbies" value="Travelling">
+        Travelling
+        </input>
+        
+        <input type="checkbox" name="hobbies[]" class="hobbies" value="Story telling">
+        Story telling
+        </input> 
+      </fieldset>
+      <input type="submit" value="submit" />
+    </form>
+  </body>
+</html>
