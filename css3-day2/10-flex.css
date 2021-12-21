@@ -1,0 +1,19 @@
+#dir-row,#dir-row-reverse,#dir-column,#dir-column-reverse{
+    display: flex;
+}
+
+#dir-row{
+    flex-direction: row;
+}
+
+#dir-row-reverse{
+    flex-direction: row-reverse;
+}
+
+#dir-column{
+    flex-direction: column;
+}
+
+#dir-column-reverse{
+    flex-direction: column-reverse;
+}
