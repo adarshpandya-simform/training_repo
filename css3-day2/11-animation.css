@@ -1,0 +1,34 @@
+
+*{box-sizing: border-box;margin: 0; padding: 0;}
+
+.outer{
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes anim {
+    0%{
+        height: 30px;
+        width: 30px;
+        opacity: 0;
+        background: rgba(255, 0, 0, 0.247);
+    }
+    100%{
+        height: 50px;
+        width: 50px;
+        opacity: 1;
+        background: rgba(128, 0, 128, 0.226);
+    }
+}
+
+.inner{
+    border-radius: 100%;
+    height: 30px;
+    width: 30px;
+    background: purple;
+    animation: anim 1s infinite;
+}
