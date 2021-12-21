@@ -1,6 +1,7 @@
 *{
     box-sizing: border-box;
 }
+
 body{
     padding: 0;
     margin: 0;
@@ -20,7 +21,7 @@ header span{
     line-height: 50px;
 }
 
-
+/* using float and clear property */
 ul{
     list-style-type: none;
     display: inline;
@@ -40,11 +41,13 @@ div{
     margin: 0 50px;
 }
 
+/* using float:right */
 div span{
     width: 80%;
     float: right;
 }
 
+/* using float:left */
 div img{
     clear: both;
     float: left;
