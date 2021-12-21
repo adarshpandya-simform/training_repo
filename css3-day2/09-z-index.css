@@ -1,0 +1,35 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+#one,#two,#three{
+    display: block;
+    background: red;
+    height: 100px;
+    width: 100px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    line-height: 100px;
+}
+
+#two{
+    margin: 20px;
+    background: yellow;
+    z-index: 2;
+}
+
+#three{
+    margin: 40px;
+    background: blueviolet;
+    z-index: 1;
+}
+
+#one{
+    z-index: 3;
+}
