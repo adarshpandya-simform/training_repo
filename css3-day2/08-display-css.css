@@ -1,0 +1,44 @@
+*{box-sizing: border-box;}
+
+body{
+    margin: 0%;
+    padding: 0;
+    height: 100vh;
+}
+
+/* using display inline */
+.inline li{
+    display: inline;
+    margin: 15px;
+    padding: 15px;
+}
+
+.inline{
+    background: rebeccapurple;
+}
+
+/* using display inline-block */
+.inline-block li{
+    display: inline-block;
+    margin: 15px;
+    padding: 15px;
+}
+
+.inline-block{
+    background: goldenrod;
+}
+
+.block{
+    background: coral;
+}
+
+/* using display block */
+.block li{
+    border: 1px solid black;
+    display: block;
+}
+
+/* using display none */
+.none{
+    display: none;
+}

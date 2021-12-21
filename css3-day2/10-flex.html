@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS flexbox</title>
+    <!-- linking css -->
+    <link rel="stylesheet" href="./10-flex.css" />
+  </head>
+  <body>
+    <h5>flexbox directions</h5>
+    <h6>flex direction row</h6>
+    <!-- flex direction row -->
+    <div id="dir-row">
+      <span>item1</span>
+      <span>item2</span>
+      <span>item3</span>
+      <span>item4</span>
+    </div>
+    <h6>flex direction row-reverse</h6>
+    <!-- flex direction row-reverse -->
+    <div id="dir-row-reverse">
+      <span>item1</span>
+      <span>item2</span>
+      <span>item3</span>
+      <span>item4</span>
+    </div>
+    <h6>flex direction column</h6>
+    <!-- flex direction column -->
+    <div id="dir-column">
+      <span>item1</span>
+      <span>item2</span>
+      <span>item3</span>
+      <span>item4</span>
+    </div>
+    <h6>flex direction column-reverse</h6>
+    <!-- flex direction column-reverse -->
+    <div id="dir-column-reverse">
+      <span>item1</span>
+      <span>item2</span>
+      <span>item3</span>
+      <span>item4</span>
+    </div>
+    <h4>space distribution using 'flex' property</h4>
+    <!-- using flex property -->
+    <p>distributing equally</p>
+    <div class="box-one">
+      <div id="item-one">one</div>
+      <div id="item-two">two</div>
+      <div id="item-three">three</div>
+    </div>
+    <br />
+    <p>making second box twice the size</p>
+    <!-- using flex property -->
+    <div class="box-one">
+      <div id="s-item-one">one</div>
+      <div id="s-item-two">two</div>
+      <div id="s-item-three">three</div>
+    </div>
+    <br />
+    <p>making third and second box thrice the size of first</p>
+    <!-- using flex property -->
+    <div class="box-one">
+      <div id="t-item-one">one</div>
+      <div id="t-item-two">two</div>
+      <div id="t-item-three">three</div>
+    </div>
+    <br />
+    <h4>changing order using 'order'</h4>
+    <p>normal order</p>
+    <!-- using order property -->
+    <div class="box-one">
+      <div id="o-item-one">one</div>
+      <div id="o-item-two">two</div>
+      <div id="o-item-three">three</div>
+    </div>
+    <p>changing order</p>
+    <div class="box-one">
+      <div id="o-item-one" class="o3">one</div>
+      <div id="o-item-two" class="o2">two</div>
+      <div id="o-item-three" class="o1">three</div>
+    </div>
+    <br />
+    <h4>diretions using 'justify-content'</h4>
+    <p>center</p>
+    <!-- using justify-content property -->
+    <div class="j-box">
+      <div id="j-item-1">item1</div>
+      <div id="j-item-2">item2</div>
+      <div id="j-item-3">item3</div>
+    </div>
+
+    <p>flex-start</p>
+    <!-- using justify-content property -->
+    <div class="j-box f-start">
+      <div id="j-item-1">item1</div>
+      <div id="j-item-2">item2</div>
+      <div id="j-item-3">item3</div>
+    </div>
+
+    <p>flex-end</p>
+    <!-- using justify-content property -->
+    <div class="j-box f-end">
+      <div id="j-item-1">item1</div>
+      <div id="j-item-2">item2</div>
+      <div id="j-item-3">item3</div>
+    </div>
+
+    <p>space-between</p>
+    <!-- using justify-content property -->
+    <div class="j-box f-space-between">
+      <div id="j-item-1">item1</div>
+      <div id="j-item-2">item2</div>
+      <div id="j-item-3">item3</div>
+    </div>
+
+    <p>space-around</p>
+    <!-- using justify-content property -->
+    <div class="j-box f-space-around">
+      <div id="j-item-1">item1</div>
+      <div id="j-item-2">item2</div>
+      <div id="j-item-3">item3</div>
+    </div>
+
+    <p>space-evenly</p>
+    <!-- using justify-content property -->
+    <div class="j-box f-space-evenly">
+      <div id="j-item-1">item1</div>
+      <div id="j-item-2">item2</div>
+      <div id="j-item-3">item3</div>
+    </div>
+    <br />
+    <h4>aligning items using 'align-items'</h4>
+    <p>align top</p>
+    <!-- using align-items property -->
+    <div class="a-box">
+      <div id="a-item">item</div>
+    </div>
+
+    <p>align center</p>
+    <!-- using align-items property -->
+    <div class="a-box a-center">
+      <div id="a-item">item</div>
+    </div>
+
+    <p>align end</p>
+    <!-- using align-items property -->
+    <div class="a-box a-end">
+      <div id="a-item">item</div>
+    </div>
+
+    <p>centering a div using 'align-items' and 'justify-content'</p>
+    <!-- using align-items property -->
+    <div class="a-box a-center f-center">
+      <div id="a-item">item</div>
+    </div>
+  </body>
+</html>
