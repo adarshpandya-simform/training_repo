@@ -1,0 +1,39 @@
+*{box-sizing: border-box;}
+
+body{
+    margin: 0%;
+    padding: 0;
+    height: 100vh;
+}
+
+.inline li{
+    display: inline;
+    margin: 15px;
+    padding: 15px;
+}
+
+.inline{
+    background: rebeccapurple;
+}
+
+.inline-block li{
+    display: inline-block;
+    margin: 15px;
+    padding: 15px;
+}
+
+.inline-block{
+    background: goldenrod;
+}
+
+.block{
+    background: coral;
+}
+.block li{
+    border: 1px solid black;
+    display: block;
+}
+
+.none{
+    display: none;
+}
