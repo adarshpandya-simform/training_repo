@@ -1,0 +1,59 @@
+<!-- html5 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Links</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <style>
+      a:link {
+        color: green;
+        background-color: transparent;
+        text-decoration: none;
+      }
+
+      a:visited {
+        color: pink;
+        background-color: transparent;
+        text-decoration: none;
+      }
+
+      a:hover {
+        color: red;
+        background-color: transparent;
+        text-decoration: underline;
+      }
+
+      a:active {
+        color: yellow;
+        background-color: transparent;
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- simple link -->
+    <a href="./00-hello_world.html">go to home</a> <br />
+    <!-- open in new tab (relative url) -->
+    <a href="./00-hello_world.html" target="_blank">home (open in new tab)</a>
+    <br />
+    <!-- go to instagram (absolute url) -->
+    <a href="https://instagram.com">go to insta</a> <br />
+    <!-- using image for link -->
+    <a href="https://images.unslplash.com">
+      <img
+        width="50px"
+        height="50px"
+        src="https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Y2Fyc3xlbnwwfHwwfHw%3D&w=1000&q=80"
+        alt="car-img"
+      />
+    </a>
+    <br />
+    <!-- linking email adress -->
+    <a href="mailto:example@gmail.com">mail me</a> <br />
+    <!-- button as link -->
+    <button onclick="document.location='0-hello_world.html'">click me</button>
+  </body>
+</html>

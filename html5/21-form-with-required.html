@@ -1,0 +1,36 @@
+<!-- html5  -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <!-- form tag -->
+    <form
+      onsubmit="event.preventDefault(); alert(this[0].value+' '+this[1].value)"
+    >
+      <label for="name">name</label> <br />
+      <input
+        type="text"
+        name="name"
+        id="name"
+        placeholder="Enter Name"
+        required
+      />
+      <br />
+      <label for="Last Name">Last Name</label> <br />
+      <input
+        type="text"
+        name="Last Name"
+        id="Last Name"
+        placeholder="Enter LastName"
+        required
+      />
+      <br />
+      <input type="submit" value="submit" />
+    </form>
+  </body>
+</html>

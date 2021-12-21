@@ -1,0 +1,127 @@
+<!-- html5 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+
+  <body>
+    <h3 style="text-align: center">Simform</h3>
+    <!-- form which calls helperFunc on submission -->
+    <!-- contains various kind of inputs -->
+    <form onsubmit="event.preventDefault(); helperFunc();">
+      <fieldset>
+        <legend>personal info</legend>
+        <label for="name">name</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          required
+          placeholder="enter name..."
+        />
+        <br />
+        <label for="last name">last name</label>
+        <input
+          type="text"
+          name="last_name"
+          id="last_name"
+          required
+          placeholder="enter last name..."
+        />
+        <br />
+        <label for="birthdate">birthdate</label>
+        <input
+          type="date"
+          min="2000-01-01"
+          name="birthdate"
+          id="birthdate"
+          required
+          value=""
+        />
+        <br />
+        <label for="gender">gender : </label>
+        <input type="radio" name="gender" id="male" value="male" required />
+        male
+
+        <input type="radio" name="gender" id="female" value="female" />
+        female
+
+        <input type="radio" name="gender" id="others" value="others" />
+        others
+      </fieldset>
+      <br />
+      <fieldset>
+        <legend>department</legend>
+        <select name="dept" required id="dept">
+          <option value="js-frontend">Js Frontend</option>
+          <option value="js-backend">Js Backend</option>
+          <option value="react-native">react native</option>
+          <option value="flutter">flutter</option>
+        </select>
+      </fieldset>
+      <br />
+      <fieldset>
+        <legend>assigned info</legend>
+        <label for="email">email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="enter email"
+          required
+        />
+        <br />
+        <label for="password">password</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          minlength="6"
+          placeholder="enter password"
+          required
+        />
+      </fieldset>
+      <input type="submit" value="submit" />
+    </form>
+    <script>
+      // set the date as today, as an when site is loaded
+      document.getElementById("birthdate").value = new Date()
+        .toISOString()
+        .substring(0, 10);
+
+      // helper function to show details
+      function helperFunc() {
+        let info = "";
+        // get the user information throught getElementById();
+        const name = document.getElementById("name").value;
+        const last_name = document.getElementById("last_name").value;
+        const email = document.getElementById("email").value;
+        const password = document.getElementById("password").value;
+        const dept = document.getElementById("dept").value;
+        const male = document.getElementById("male").checked;
+        const female = document.getElementById("female").checked;
+        const others = document.getElementById("others").checked;
+        const bdate = document.getElementById("birthdate").value;
+        // append all info
+        info += `Name : ${name}\nEmail : ${email}\nPassword : ${password}\nBirth Date : ${bdate}\nDepartment : ${dept}`;
+
+        // check gender and append
+        if (male) {
+          info += "\nGender : male";
+        }
+        if (female) {
+          info += "\nGender : female";
+        }
+        if (others) {
+          info += "\nGender : others";
+        }
+        // show info
+        console.log(info);
+      }
+    </script>
+  </body>
+</html>

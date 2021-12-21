@@ -1,0 +1,85 @@
+<!-- html5 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkbox,Radio button</title>
+  </head>
+  <body>
+    <!-- form which calls helperFunc on submission -->
+    <!-- contains radio buttons,checkboxes -->
+    <form onsubmit="event.preventDefault(); helperFunc()">
+      <fieldset>
+        <legend>gender</legend>
+        <label for="gender">gender : </label>
+        <input type="radio" name="gender" id="male" value="male" required>
+        male
+        </input>
+        
+        <input type="radio" name="gender" id="female" value="female">
+        female
+        </input>
+        
+        <input type="radio" name="gender" id="others" value="others">
+        others
+        </input> 
+      </fieldset>
+      <br>
+      <fieldset>
+        <legend>Hobbies</legend>
+        <div required>
+            <label for="Hobbies">Hobbies : </label>
+        <input type="checkbox" id="reading" value="Reading" >
+        Reading
+        </input>
+        
+        <input type="checkbox" id="travelling" value="Travelling">
+        Travelling
+        </input>
+        
+        <input type="checkbox" id="story_telling" value="Story telling">
+        Story telling
+        </input> </div> 
+      </fieldset>
+      <input type="submit" value="submit" />
+    </form>
+    <script>
+      // helper function to output what is selected with help of 
+      // document.getElementById
+        function helperFunc(){
+            let checked =''
+            const male = document.getElementById('male').checked
+            const female = document.getElementById('female').checked
+            const others = document.getElementById('others').checked
+            const reading = document.getElementById('reading').checked;
+            const travelling = document.getElementById('travelling').checked;
+            const story_telling = document.getElementById('story_telling').checked;
+
+            if(male)
+            {
+                console.log('male is checked')
+            }else if(female)
+            {
+                console.log('female is checked')
+            }else{
+                console.log('others is checked')
+            }
+            
+            if(reading)
+            {
+                checked+='reading '
+            } 
+            if(travelling)
+            {
+                checked+='travelling '
+            }
+             if(story_telling){
+                checked+='story telling'
+            }
+            console.log(checked)
+        }
+    </script>
+  </body>
+</html>
