@@ -6,6 +6,7 @@ body{
     height: 100vh;
 }
 
+/* using display inline */
 .inline li{
     display: inline;
     margin: 15px;
@@ -16,6 +17,7 @@ body{
     background: rebeccapurple;
 }
 
+/* using display inline-block */
 .inline-block li{
     display: inline-block;
     margin: 15px;
@@ -29,11 +31,14 @@ body{
 .block{
     background: coral;
 }
+
+/* using display block */
 .block li{
     border: 1px solid black;
     display: block;
 }
 
+/* using display none */
 .none{
     display: none;
 }
