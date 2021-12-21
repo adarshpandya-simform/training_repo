@@ -18,18 +18,21 @@ body{
     line-height: 100px;
 }
 
+/* using z-index */
 #two{
     margin: 20px;
     background: yellow;
     z-index: 2;
 }
 
+/* using z-index */
 #three{
     margin: 40px;
     background: blueviolet;
     z-index: 1;
 }
 
+/* using z-index */
 #one{
     z-index: 3;
 }
