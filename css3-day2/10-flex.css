@@ -68,3 +68,21 @@
     border: 1px solid royalblue;
     flex: 3;
 }
+
+#o-item-one,#o-item-two,#o-item-three{
+    flex: 1;
+    border: 1px solid green;
+}
+
+.o3{
+    order: 3;
+
+}
+
+.o1{
+    order: 1;
+}
+
+.o2{
+    order: 2;
+}
