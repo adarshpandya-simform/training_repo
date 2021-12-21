@@ -26,6 +26,33 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(45deg,pink,rgb(96, 96, 243)) !important;
+    background: linear-gradient(45deg,pink,rgb(96, 96, 243)) ;
 }
 
+/*  Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .container div{
+        background: mediumaquamarine !important;
+    }
+}
+
+/*  Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    .container div{
+        background: mediumturquoise !important;
+    }
+ }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    .container div{
+        background: mistyrose !important;
+    }
+ }
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    .container div{
+        background: orange !important;
+    }
+ }
