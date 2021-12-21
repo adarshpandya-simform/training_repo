@@ -1,3 +1,8 @@
+/* 
+    using different flex properties like flex-direction,display,
+    justify-content,align-items,order
+*/
+
 #dir-row,#dir-row-reverse,#dir-column,#dir-column-reverse{
     display: flex;
 }
@@ -85,4 +90,66 @@
 
 .o2{
     order: 2;
+}
+
+.j-box{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    background-color: #34495e;
+    justify-content: center;
+    color: black;
+}
+
+#j-item-1,#j-item-2,#j-item-3{
+    background: yellow;
+    border: 1px solid black;
+}
+
+.f-center{
+    justify-content: center;
+}
+
+.f-start{
+    justify-content: flex-start;
+}
+
+.f-end{
+    justify-content: flex-end;
+}
+
+.f-space-between{
+    justify-content: space-between;
+}
+
+.f-space-around{
+    justify-content: space-around;
+}
+
+.f-space-evenly{
+    justify-content: space-evenly;
+}
+
+.a-box{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 300px;
+    background-color: #1dd1a1;
+    color: white;
+    align-items: flex-start;
+}
+
+#a-item{
+    height: 100px;
+    width: 100px;
+    background: tomato;
+}
+
+.a-center{
+    align-items: center;
+}
+
+.a-end{
+    align-items: flex-end;
 }
