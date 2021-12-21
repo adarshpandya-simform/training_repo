@@ -17,3 +17,54 @@
 #dir-column-reverse{
     flex-direction: column-reverse;
 }
+
+.box-one{
+    background: burlywood;
+    display: flex;
+    text-align: center;
+}
+
+#item-one{
+    border: 1px solid tomato;
+    flex: 1;
+}
+
+#item-two{
+    border: 1px solid tomato;
+    flex: 1;
+}
+
+#item-three{
+    border: 1px solid tomato;
+    flex: 1;
+}
+
+#s-item-one{
+    border: 1px solid tomato;
+    flex: 1;
+}
+
+#s-item-two{
+    border: 1px solid teal;
+    flex: 2;
+}
+
+#s-item-three{
+    border: 1px solid tomato;
+    flex: 1;
+}
+
+#t-item-one{
+    border: 1px solid tomato;
+    flex: 1;
+}
+
+#t-item-two{
+    border: 1px solid royalblue;
+    flex: 3;
+}
+
+#t-item-three{
+    border: 1px solid royalblue;
+    flex: 3;
+}
