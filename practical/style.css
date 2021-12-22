@@ -1,0 +1,295 @@
+:root{
+    --white:#fff;
+    --black:#000;
+    --primary:#2874F0;
+    --btn-border:#dbdbdb;
+    --bg-color:#F1F3F6;
+    --bg-shadow:rgba(0, 0, 0, 0.233);
+    --border:rgba(192, 192, 192, 0.295);
+    --yellow:#FFE500;
+    --discount:#70AE73;
+    --product-category:#797979;
+}
+
+*{
+    box-sizing: border-box !important;
+    font-family: 'Roboto' ,sans-serif!important;
+}
+
+
+html,body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    background: var(--bg-color);
+}
+
+/* logo related styles */
+.logo-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-text{
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.logo-yello-text{
+    color: var(--yellow);
+}
+
+/* navbar */
+.navbar{
+    background: var(--primary);
+    color: var(--white);
+    padding: 10px 0px;
+}
+
+.nav-items{
+    height: 100%;
+    width: 70%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.nav-inner{
+    flex: 9 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* searchbar */
+.searchbar{
+    height: 35px;
+    font-weight: normal !important;
+    font-family: 400px !important;
+    outline: none !important;
+    border: none;
+    padding: 0px 15px;
+    width:90%;
+    margin-left: 10px;
+    margin-right: 20px;
+    box-shadow: 1px 1px 3px var(--bg-shadow);
+}
+
+/* search icon */
+#search-icon{
+    color: var(--primary);
+    position: relative;
+    left: 450px;
+    font-size: 22px;
+    font-weight: normal;
+    z-index: 40;
+}
+
+/* buttons */
+.btns{
+    flex: 3 !important;
+    display: flex;
+    justify-content: space-around !important;
+    cursor: pointer;
+}
+
+.btns button{
+    margin: 0px 10px !important;
+}
+
+/* hero-login btn */
+.login-btn{
+    background: var(--white);
+    color: var(--primary);
+    font-size: 16px;
+    font-weight: 500 !important;
+    border: 1px solid var(--btn-border);
+    padding: 5px 40px; 
+    display: flex;
+    border-radius: 2px;
+    letter-spacing: .1px;
+}
+
+/* icon btns */
+.btns span{
+    border: none;
+    padding: 5px 15px;
+    font-weight: bold !important;
+    background: transparent;
+    color: var(--white) !important;
+}
+
+/* category related styles */
+.categories{
+    width: 100%;
+    background: var(--white);
+    box-shadow: 0px 1px 1px var(--bg-shadow);
+}
+
+.categories-container{
+    width: 99%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.category-card{
+    padding: 15px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+}
+
+.categories-container img{
+    height: 64px;
+    width: 64px;
+}
+/* deals related styling */
+.deals{
+    border-bottom: none;
+    width: 98%;
+    margin: auto;
+    display: flex;
+    height: 55%;
+}
+
+.deals-container{
+    /* border: 1px solid rgba(0, 0, 0, 0.075); */
+    background: var(--white);
+    margin-right: 5px;
+    overflow: scroll;
+    flex: 9.5;
+    display: flex;
+    flex-direction: column;
+}
+
+/* style related to deal-box */
+/* deal title styles */
+.deals-title{
+    flex:2;
+    border-bottom: 2px solid var(--border);
+}
+
+.title-container{
+    width: 95%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title-with-time{
+    width: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title-with-time h3{
+    font-size: 22px;
+    font-weight: normal;
+}
+
+.deal-time{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.deal-time span{
+    margin-left: 10px;
+    font-size: 17px;
+    color: gray;
+    font-weight: 400;
+}
+
+.deal-time img{
+    width: 18%;
+}
+
+/* deals button */
+.deals-button button{
+    background: var(--primary);
+    color:var(--white) ;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.233);
+    font-size: 13px;
+    padding: 10px 20px;
+    letter-spacing: .5px;
+    border: none;
+    border-radius: 2px;
+    outline: none;
+    font-weight: 500;
+}
+
+/* deal product styles */
+.deals-products{
+    flex: 10;
+    background: var(--white);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, .2);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+/* product related styles */
+.product-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow: scroll;
+
+}
+
+.product{
+    padding: 10px;
+    margin: 0 10px;
+    text-align: center;
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+.product-img{
+    margin-bottom: 12px;
+    width: 140px !important;
+    height: 140px !important;
+}
+
+.prodct-discount{
+    margin-top: 7px;
+    color: var(--discount);
+    font-size: 15px;
+    margin-bottom: 7px;
+}
+
+.prodct-category{
+    color: var(--product-category);
+    font-size: 13px;
+}
+/* styles related to ad-box */
+.ad{
+    border: 1px solid rgba(0, 0, 0, 0.075);
+    margin-left: 5px;
+    flex: 2.1;
+    background: var(--white);
+    padding: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, .2);
+}
+
+.ad-container{
+    height: 100%;
+    width: 100%;
+    background: url(./assets/ad.webp);
+    background-size: contain !important;
+    background-position: center !important;
+    background-repeat: no-repeat;
+}
