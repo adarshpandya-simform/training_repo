@@ -16,11 +16,14 @@
   <body>
     <div class="container mt-5">
       <h4 class="text-center">a form with input group</h4>
+      <!-- 'form-group' class -->
       <div class="form-group">
+        <!-- form tag with onsubmit event -->
         <form
           onsubmit="event.preventDefault(); alert(this[0].value+' '+this[1].value+' '+this[2].value+'₹')"
         >
           <label for="name">Name</label>
+          <!-- used 'input-group' as a wrapper and 'input-group-text' for text -->
           <div class="input-group">
             <div class="input-group-text">Name</div>
             <input
@@ -34,6 +37,7 @@
           </div>
           <br />
           <label for="surname">Surname </label>
+          <!-- used 'input-group' as a wrapper and 'input-group-text' for text -->
           <div class="input-group">
             <input
               type="text"
@@ -47,6 +51,7 @@
           </div>
           <br />
           <label for="donation">Donation </label>
+          <!-- used 'input-group' as a wrapper and 'input-group-text' for text -->
           <div class="input-group">
             <span class="input-group-text">₹</span>
             <input
