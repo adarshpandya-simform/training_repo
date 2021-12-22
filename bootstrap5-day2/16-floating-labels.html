@@ -16,10 +16,13 @@
   <body>
     <div class="container mt-5">
       <h4 class="text-center">a form with floating labels</h4>
+      <!-- form-group -->
       <div class="form-group">
+        <!-- form tag with onsubmit event -->
         <form
           onsubmit="event.preventDefault(); alert(this[0].value+' '+this[1].value)"
         >
+          <!-- used 'form-floating' for floating labels -->
           <div class="form-floating">
             <input
               type="text"
@@ -32,6 +35,7 @@
             <label for="name">Name</label>
           </div>
           <br />
+          <!-- used 'form-floating' for floating labels -->
           <div class="form-floating">
             <input
               type="text"
