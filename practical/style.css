@@ -5,11 +5,13 @@
     --btn-border:#dbdbdb;
     --bg-color:#F1F3F6;
     --bg-shadow:rgba(0, 0, 0, 0.233);
+    --border:rgba(192, 192, 192, 0.295);
+    --yellow:#FFE500;
 }
 
 *{
     box-sizing: border-box !important;
-    font-family: 'Roboto' !important;
+    font-family: 'Roboto' ,sans-serif!important;
 }
 
 html,body{
@@ -33,7 +35,7 @@ html,body{
 }
 
 .logo-yello-text{
-    color: #FFE500;
+    color: var(--yellow);
 }
 
 /* navbar */
@@ -114,17 +116,7 @@ html,body{
     padding: 5px 15px;
     font-weight: bold !important;
     background: transparent;
-    color: white !important;
-}
-
-.icon-btn{
-    color: var(--white);
-    font-size: 18px;
-    font-weight: bold !important;
-    border: 0px;
-    padding: 7px 35px;
-    background: transparent;
-
+    color: var(--white) !important;
 }
 
 /* category related styles */
@@ -158,4 +150,103 @@ html,body{
 .categories-container img{
     height: 64px;
     width: 64px;
+}
+/* deals related styling */
+.deals{
+    border-bottom: none;
+    width: 98%;
+    margin: auto;
+    display: flex;
+    height: 55%;
+}
+
+.deals-container{
+    /* border: 1px solid rgba(0, 0, 0, 0.075); */
+    background: var(--white);
+    margin-right: 5px;
+    flex: 9.5;
+    display: flex;
+    flex-direction: column;
+}
+
+/* style related to deal-box */
+/* deal title styles */
+.deals-title{
+    flex:2;
+    border-bottom: 2px solid var(--border);
+}
+
+.title-container{
+    width: 95%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title-with-time{
+    width: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title-with-time h3{
+    font-size: 22px;
+    font-weight: normal;
+}
+
+.deal-time{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.deal-time span{
+    margin-left: 10px;
+    font-size: 17px;
+    color: gray;
+    font-weight: 400;
+}
+
+.deal-time img{
+    width: 18%;
+}
+
+/* deals button */
+.deals-button button{
+    background: var(--primary);
+    color:var(--white) ;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.233);
+    font-size: 13px;
+    padding: 10px 20px;
+    letter-spacing: .5px;
+    border: none;
+    border-radius: 2px;
+    outline: none;
+    font-weight: 500;
+}
+
+/* deal product styles */
+.deals-products{
+    flex: 10;
+    background: rgba(0, 0, 0, 0.178);
+}
+
+/* styles related to ad-box */
+.ad{
+    border: 1px solid rgba(0, 0, 0, 0.075);
+    margin-left: 5px;
+    flex: 2.1;
+    background: var(--white);
+    padding: 5px;
+}
+
+.ad-container{
+    height: 100%;
+    width: 100%;
+    background: url(./assets/ad.webp);
+    background-size: contain !important;
+    background-position: center !important;
+    background-repeat: no-repeat;
 }
