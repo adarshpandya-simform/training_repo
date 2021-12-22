@@ -17,8 +17,10 @@
     <div class="container mt-5">
       <h4 class="text-center">a form with validation</h4>
       <div class="form-group">
+        <!-- form tag with 'need-validation' class -->
         <form novalidate class="needs-validation">
           <div>
+            <!-- various inputs with labels -->
             <label class="form-label" for="name">Name</label>
             <input
               type="text"
@@ -28,6 +30,7 @@
               placeholder="Enter Your Name"
               class="form-control"
             />
+            <!-- helpers for feedback i.e valid/invalid -->
             <div class="valid-feedback">Looks good!</div>
             <div class="invalid-feedback">Field cannot be empty</div>
           </div>
@@ -42,6 +45,7 @@
               placeholder="Enter Your Surname"
               class="form-control"
             />
+            <!-- helpers for feedback i.e valid/invalid -->
             <div class="valid-feedback">Looks good!</div>
             <div class="invalid-feedback">Even Field cannot be empty</div>
           </div>
@@ -78,13 +82,14 @@
 
                 alert(name + " " + surname);
               }
+              // add a class to the form
               form.classList.add("was-validated");
             },
             false
           );
         });
       }
-
+      // calling the function
       validator();
     </script>
   </body>
