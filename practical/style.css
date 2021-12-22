@@ -7,12 +7,15 @@
     --bg-shadow:rgba(0, 0, 0, 0.233);
     --border:rgba(192, 192, 192, 0.295);
     --yellow:#FFE500;
+    --discount:#70AE73;
+    --product-category:#797979;
 }
 
 *{
     box-sizing: border-box !important;
     font-family: 'Roboto' ,sans-serif!important;
 }
+
 
 html,body{
     margin: 0;
@@ -164,6 +167,7 @@ html,body{
     /* border: 1px solid rgba(0, 0, 0, 0.075); */
     background: var(--white);
     margin-right: 5px;
+    overflow: scroll;
     flex: 9.5;
     display: flex;
     flex-direction: column;
@@ -230,9 +234,47 @@ html,body{
 /* deal product styles */
 .deals-products{
     flex: 10;
-    background: rgba(0, 0, 0, 0.178);
+    background: var(--white);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, .2);
+    padding: 10px;
+    display: flex;
+    align-items: center;
 }
 
+/* product related styles */
+.product-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow: scroll;
+
+}
+
+.product{
+    padding: 10px;
+    margin: 0 10px;
+    text-align: center;
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+.product-img{
+    margin-bottom: 12px;
+    width: 140px !important;
+    height: 140px !important;
+}
+
+.prodct-discount{
+    margin-top: 7px;
+    color: var(--discount);
+    font-size: 15px;
+    margin-bottom: 7px;
+}
+
+.prodct-category{
+    color: var(--product-category);
+    font-size: 13px;
+}
 /* styles related to ad-box */
 .ad{
     border: 1px solid rgba(0, 0, 0, 0.075);
@@ -240,6 +282,7 @@ html,body{
     flex: 2.1;
     background: var(--white);
     padding: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, .2);
 }
 
 .ad-container{
