@@ -29,6 +29,7 @@ html,body{
 .logo-container{
     display: flex;
     flex-direction: column;
+    cursor: pointer;
 }
 
 .logo-text{
@@ -111,6 +112,7 @@ html,body{
     display: flex;
     border-radius: 2px;
     letter-spacing: .1px;
+    cursor: pointer;
 }
 
 /* icon btns */
@@ -148,6 +150,7 @@ html,body{
     font-weight: 500;
     font-size: 14px;
     text-align: center;
+    cursor: pointer;
 }
 
 .categories-container img{
@@ -155,32 +158,42 @@ html,body{
     width: 64px;
 }
 /* deals related styling */
-.deals{
+.deals,.regular-deals{
     border-bottom: none;
     width: 98%;
     margin: auto;
     display: flex;
-    height: 55%;
+    height: 59%;
 }
 
 .deals-container{
-    /* border: 1px solid rgba(0, 0, 0, 0.075); */
     background: var(--white);
     margin-right: 5px;
     overflow: scroll;
     flex: 9.5;
     display: flex;
     flex-direction: column;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, .2);
+}
+
+.regular-deals-container{
+    background: var(--white);
+    margin-right: 5px;
+    overflow: scroll;
+    flex: 12;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, .2);
 }
 
 /* style related to deal-box */
 /* deal title styles */
-.deals-title{
+.deals-title,.regular-deals-title{
     flex:2;
     border-bottom: 2px solid var(--border);
 }
 
-.title-container{
+.title-container,.regular-title-container{
     width: 95%;
     margin: auto;
     display: flex;
@@ -195,9 +208,27 @@ html,body{
     justify-content: space-between;
 }
 
-.title-with-time h3{
+.regular-title-with-msg{
+    padding:10px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title-with-time h3,.regular-title-with-msg div div{
     font-size: 22px;
     font-weight: normal;
+}
+
+.regular-title-with-msg div{
+    display: flex;
+    flex-direction: column;
+}
+
+.regular-title-with-msg div span{
+    color: var(--product-category);
+    font-size: 15px;
 }
 
 .deal-time{
@@ -218,7 +249,7 @@ html,body{
 }
 
 /* deals button */
-.deals-button button{
+.deals-button button,.regular-deals-button button{
     background: var(--primary);
     color:var(--white) ;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.233);
@@ -229,10 +260,11 @@ html,body{
     border-radius: 2px;
     outline: none;
     font-weight: 500;
+    cursor: pointer;
 }
 
 /* deal product styles */
-.deals-products{
+.deals-products,.regular-deals-products{
     flex: 10;
     background: var(--white);
     box-shadow: 0px 2px 4px rgba(0, 0, 0, .2);
@@ -251,6 +283,7 @@ html,body{
 }
 
 .product{
+    cursor: pointer;
     padding: 10px;
     margin: 0 10px;
     text-align: center;
@@ -262,6 +295,7 @@ html,body{
     margin-bottom: 12px;
     width: 140px !important;
     height: 140px !important;
+    object-fit: contain;
 }
 
 .prodct-discount{
@@ -286,10 +320,12 @@ html,body{
 }
 
 .ad-container{
+    cursor: pointer;
     height: 100%;
     width: 100%;
     background: url(./assets/ad.webp);
-    background-size: contain !important;
-    background-position: center !important;
+    background-size: cover !important;
+    background-position: center center!important;
     background-repeat: no-repeat;
 }
+
