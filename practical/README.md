@@ -17,7 +17,7 @@ updates for 22-dec: <br>
     - completed 'deals of the day' part
     - created a PR 
 
-updates for 22-dec: <br>
+updates for 23-dec: <br>
     
     - completed the regular products markup
     - used css class for styling
