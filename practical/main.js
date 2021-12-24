@@ -1,3 +1,4 @@
+// iife function
 (() => {
   let data = [
     {
