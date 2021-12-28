@@ -44,6 +44,17 @@ equalButton.addEventListener("click", () => {
         console.log(error);
       }
     }
+
+    if (inputExp.includes("^")) {
+      input.value = inputExp.replace("^", "**");
+      try {
+        let result = eval(input.value);
+        input.value = result;
+      } catch (error) {
+        input.value = "";
+        console.log(error);
+      }
+    }
   } else {
     alert("not valid");
     input.value = "";
@@ -100,4 +111,8 @@ squareButton.addEventListener("click", () => {
 divByOne.addEventListener("click", () => {
   let num = +input.value;
   input.value = 1 / num;
+});
+
+exponentialButton.addEventListener("click", () => {
+  input.value += "^";
 });
