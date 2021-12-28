@@ -13,6 +13,7 @@ const squareButton = document.getElementById("square");
 const divByOne = document.getElementById("div-by-one");
 const logButton = document.getElementById("log");
 const InButton = document.getElementById("In");
+const tenExp = document.getElementById("ten-exp");
 
 const factorial = (num) =>
   num === 0 || num === 1 ? 1 : num * factorial(num - 1);
@@ -127,4 +128,9 @@ logButton.addEventListener("click", () => {
 InButton.addEventListener("click", () => {
   num = +input.value;
   input.value = Math.log(num);
+});
+
+tenExp.addEventListener("click", () => {
+  num = +input.value;
+  input.value = 10 ** num;
 });
