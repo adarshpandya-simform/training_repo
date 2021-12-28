@@ -1,0 +1,24 @@
+{
+  "name": "javascript",
+  "version": "1.0.0",
+  "description": "<hr> Started on : 24-12-2021<br> Mentor : Mitul <br> Training Coordinaor: Bhumika<br> Team Manager : Mehul Pandya <hr>",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adarshpandya-simform/javascript.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adarshpandya-simform/javascript/issues"
+  },
+  "homepage": "https://github.com/adarshpandya-simform/javascript#readme",
+  "dependencies": {
+    "node-fetch": "^3.1.0"
+  }
+}
