@@ -1,7 +1,7 @@
-## Javascript Basics (24-dec,27dec)
+## Javascript Basics (24-dec,27dec,28-dec)
 
 <hr>
-Started on : 24-12-2021,27-12-2021<br>
+Started on : 24-12-2021,27,28<br>
 Mentor : Mitul <br>
 Training Coordinator: Bhumika<br>
 Team Manager : Mehul Pandya
@@ -43,3 +43,15 @@ updates for 27-dec: <br>
     - learnt about `promise.all`
     - implemented tagged-template-literals
     - modified .map() method with prototype
+
+updates for 28-dec: <br>
+
+    - started with practical
+    - understood the basic functionality
+    - completed the markup
+    - completed the styling of project
+    - added JS for functionality
+    - made all basic functionalities work
+    - added pie-button,exp-button,log,sqrt,sqaure buttons
+    - evaluated mathematical expressions
+    - clear/backspace functionality
