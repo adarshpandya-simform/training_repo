@@ -14,6 +14,14 @@ const divByOne = document.getElementById("div-by-one");
 const logButton = document.getElementById("log");
 const InButton = document.getElementById("In");
 const tenExp = document.getElementById("ten-exp");
+const expButton = document.getElementById("exp");
+
+const MC = document.getElementById("clear-memory");
+const MR = document.getElementById("show-memory");
+const MP = document.getElementById("add-memory");
+const MD = document.getElementById("remove-last");
+
+let memory = [];
 
 const factorial = (num) =>
   num === 0 || num === 1 ? 1 : num * factorial(num - 1);
@@ -120,6 +128,10 @@ exponentialButton.addEventListener("click", () => {
   input.value += "^";
 });
 
+expButton.addEventListener("click", () => {
+  input.value += "^";
+});
+
 logButton.addEventListener("click", () => {
   num = +input.value;
   input.value = Math.log10(num);
@@ -133,4 +145,28 @@ InButton.addEventListener("click", () => {
 tenExp.addEventListener("click", () => {
   num = +input.value;
   input.value = 10 ** num;
+});
+
+MP.addEventListener("click", () => {
+  num = +input.value;
+  memory.push(num);
+  console.log(memory);
+});
+
+MD.addEventListener("click", () => {
+  memory.pop();
+  console.log(memory);
+});
+
+MR.addEventListener("click", () => {
+  if (memory.length !== 0) {
+    let sum = memory.reduce((a, b) => a + b);
+    input.value = sum;
+  } else {
+    input.value = 0;
+  }
+});
+
+MC.addEventListener("click", () => {
+  memory = [];
 });
