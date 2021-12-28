@@ -20,8 +20,10 @@ const MC = document.getElementById("clear-memory");
 const MR = document.getElementById("show-memory");
 const MP = document.getElementById("add-memory");
 const MD = document.getElementById("remove-last");
+const MS = document.getElementById("memory-store");
 
 let memory = [];
+let ms = 0;
 
 const factorial = (num) =>
   num === 0 || num === 1 ? 1 : num * factorial(num - 1);
@@ -151,6 +153,12 @@ MP.addEventListener("click", () => {
   num = +input.value;
   memory.push(num);
   console.log(memory);
+});
+
+MS.addEventListener("click", () => {
+  num = +input.value;
+  ms = num;
+  input.value = ms;
 });
 
 MD.addEventListener("click", () => {
