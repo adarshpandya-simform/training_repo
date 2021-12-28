@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap 5</title>
+    <!-- adding css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container mt-5">
+      <h4 class="text-center">a form with grid layout</h4>
+      <br />
+      <!-- 'form-group' class -->
+      <div class="form-group border p-3">
+        <!-- form tag with on submit event -->
+        <form onsubmit="event.preventDefault(); alert('hello')">
+          <!-- using row and cols for grid layout -->
+          <div class="row gx-3 gy-5">
+            <!-- the row space will be divided in 3:4:5 i.e col-3,col-4,col-5 -->
+            <div class="col-3">
+              <!-- for floating labels -->
+              <div class="form-floating">
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  required
+                  placeholder="enter name"
+                  class="form-control"
+                />
+                <label class="form-label" for="name">Name</label>
+              </div>
+            </div>
+            <div class="col-4">
+              <!-- for floating labels -->
+              <div class="form-floating">
+                <input
+                  type="text"
+                  name="surname"
+                  id="surname"
+                  required
+                  placeholder="enter surname"
+                  class="form-control"
+                />
+                <label class="form-label" for="surname">Surname</label>
+              </div>
+            </div>
+            <div class="col-5">
+              <!-- for floating labels -->
+              <div class="form-floating">
+                <input
+                  type="text"
+                  name="username"
+                  id="username"
+                  required
+                  placeholder="enter username"
+                  class="form-control"
+                />
+                <label class="form-label" for="username">Username</label>
+              </div>
+            </div>
+          </div>
+          <!-- using row and cols for grid layout -->
+          <br />
+          <!-- using row and cols for grid layout -->
+          <div class="row gx-3 gy-5">
+            <!-- col-12 will take up all the space in row -->
+            <div class="col-12">
+              <!-- for floating labels -->
+              <div class="form-floating">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  required
+                  class="form-control"
+                  placeholder="enter mail"
+                />
+                <label for="email">email</label>
+              </div>
+            </div>
+          </div>
+          <br />
+          <!-- using row and cols for grid layout -->
+          <div class="row gx-3 gy-5">
+            <!-- both divs divided into equall space -->
+            <div class="col">
+              <!-- for floating labels -->
+              <div class="form-floating">
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  required
+                  placeholder="enter password"
+                  class="form-control"
+                />
+                <label for="password">password</label>
+              </div>
+            </div>
+            <div class="col">
+              <!-- for floating labels -->
+              <div class="form-floating">
+                <input
+                  type="password"
+                  name="confirm_password"
+                  id="confirm_password"
+                  required
+                  placeholder="enter confirm password"
+                  class="form-control"
+                />
+                <label for="confirm_password">confirm password</label>
+              </div>
+            </div>
+          </div>
+          <br />
+          <!-- using row and cols for grid layout -->
+          <div class="row gx-3 gy-5">
+            <!-- sign up button -->
+            <input type="submit" class="btn btn-success" value="sign up" />
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- required js for bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
