@@ -3,6 +3,10 @@ const clearButton = document.getElementById("clear");
 const backspaceButton = document.getElementById("backspace");
 const equalButton = document.getElementsByClassName("equal")[0];
 const normalButtons = document.querySelectorAll(".normal-inp");
+const modButton = document.getElementById("modX");
+const plusMinusButton = document.getElementById("plusminus");
+const pieButton = document.getElementById("pie");
+const eButton = document.getElementById("e");
 
 const factorial = (num) =>
   num === 0 || num === 1 ? 1 : num * factorial(num - 1);
@@ -17,11 +21,8 @@ equalButton.addEventListener("click", () => {
       let till2 = inputExp.lastIndexOf("-");
       let till3 = inputExp.lastIndexOf("*");
       let till4 = inputExp.lastIndexOf("/");
-      console.log(inputExp.split(""));
       let maxIndex = Math.max(till1, till2, till3, till4);
-      console.log(maxIndex);
       if (maxIndex <= -1) {
-        console.log("the num itself");
         let res = factorial(inputExp.slice(0, -1));
         input.value = res;
       } else {
@@ -57,4 +58,26 @@ clearButton.addEventListener("click", () => {
 
 backspaceButton.addEventListener("click", () => {
   input.value = input.value.slice(0, -1);
+});
+
+modButton.addEventListener("click", () => {
+  let num = +input.value;
+  if (num < 0) {
+    num *= -1;
+  }
+  input.value = num;
+});
+
+plusMinusButton.addEventListener("click", () => {
+  let num = +input.value;
+  num *= -1;
+  input.value = num;
+});
+
+pieButton.addEventListener("click", () => {
+  input.value += 3.14;
+});
+
+eButton.addEventListener("click", () => {
+  input.value += 2.718281828;
 });
