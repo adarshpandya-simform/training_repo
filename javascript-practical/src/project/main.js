@@ -11,6 +11,8 @@ const sqrtButton = document.getElementById("sqrt");
 const exponentialButton = document.getElementById("exponential");
 const squareButton = document.getElementById("square");
 const divByOne = document.getElementById("div-by-one");
+const logButton = document.getElementById("log");
+const InButton = document.getElementById("In");
 
 const factorial = (num) =>
   num === 0 || num === 1 ? 1 : num * factorial(num - 1);
@@ -115,4 +117,14 @@ divByOne.addEventListener("click", () => {
 
 exponentialButton.addEventListener("click", () => {
   input.value += "^";
+});
+
+logButton.addEventListener("click", () => {
+  num = +input.value;
+  input.value = Math.log10(num);
+});
+
+InButton.addEventListener("click", () => {
+  num = +input.value;
+  input.value = Math.log(num);
 });
