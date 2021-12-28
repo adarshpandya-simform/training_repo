@@ -28,7 +28,7 @@
     <!-- a flexbox container -->
     <div class="calc-container">
       <div class="result-area">
-        <input type="text" autofocus name="input" class="input" value="0" />
+        <input type="text" placeholder="0" autofocus name="input" id="input" />
       </div>
       <div class="calc-inputs">
         <div class="calc-scientific">
@@ -85,8 +85,8 @@
             <button>2<sup>nd</sup></button>
             <button>pi</button>
             <button>&#160;e&#160;</button>
-            <button>&#160;C&#160;</button>
-            <button>clr</button>
+            <button id="clear">&#160;C&#160;</button>
+            <button id="backspace"><i class="fas fa-backspace"></i></button>
           </div>
           <div class="normal-row">
             <button>
@@ -99,41 +99,41 @@
           </div>
           <div class="normal-row">
             <button>&#160;&radic;&#160;</button>
-            <button>&#160;(&#160;</button>
-            <button>&#160;)&#160;</button>
-            <button><i>n!</i>&#160;</button>
-            <button>&#160;&#8763;&#160;</button>
+            <button class="normal-inp" value="(">&#160;(&#160;</button>
+            <button class="normal-inp" value=")">&#160;)&#160;</button>
+            <button class="normal-inp" value="!"><i>n!</i>&#160;</button>
+            <button class="normal-inp" value="/">&#160;&#8763;&#160;</button>
           </div>
           <div class="normal-row">
             <button>
               <i>x<sup>y</sup></i>
             </button>
-            <button>&#160;7&#160;</button>
-            <button>&#160;8&#160;</button>
-            <button>&#160;9&#160;</button>
-            <button>&#160;X&#160;</button>
+            <button class="normal-inp" value="7">&#160;7&#160;</button>
+            <button class="normal-inp" value="8">&#160;8&#160;</button>
+            <button class="normal-inp" value="9">&#160;9&#160;</button>
+            <button class="normal-inp" value="*">&#160;X&#160;</button>
           </div>
           <div class="normal-row">
             <button>
               <i>10<sup>x</sup></i>
             </button>
-            <button>&#160;4&#160;</button>
-            <button>&#160;5&#160;</button>
-            <button>&#160;6&#160;</button>
-            <button>&#160;-&#160;</button>
+            <button class="normal-inp" value="4">&#160;4&#160;</button>
+            <button class="normal-inp" value="5">&#160;5&#160;</button>
+            <button class="normal-inp" value="6">&#160;6&#160;</button>
+            <button class="normal-inp" value="-">&#160;-&#160;</button>
           </div>
           <div class="normal-row">
             <button>log</button>
-            <button>&#160;1&#160;</button>
-            <button>&#160;2&#160;</button>
-            <button>&#160;3&#160;</button>
-            <button>&#160;+&#160;</button>
+            <button class="normal-inp" value="1">&#160;1&#160;</button>
+            <button class="normal-inp" value="2">&#160;2&#160;</button>
+            <button class="normal-inp" value="3">&#160;3&#160;</button>
+            <button class="normal-inp" value="+">&#160;+&#160;</button>
           </div>
           <div class="normal-row">
             <button>In&#160;</button>
             <button><i>+/-</i></button>
-            <button>&#160;0&#160;</button>
-            <button>&#160;.&#160;</button>
+            <button class="normal-inp" value="0">&#160;0&#160;</button>
+            <button class="normal-inp" value=".">&#160;.&#160;</button>
             <button class="equal">&#160;=&#160;</button>
           </div>
         </div>
