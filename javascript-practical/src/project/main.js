@@ -156,8 +156,10 @@ MP.addEventListener("click", () => {
 });
 
 MS.addEventListener("click", () => {
-  num = +input.value;
-  ms = num;
+  if (ms === 0) {
+    num = +input.value;
+    ms = num;
+  }
   input.value = ms;
 });
 
