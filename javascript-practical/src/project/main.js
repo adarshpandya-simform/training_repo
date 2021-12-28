@@ -7,6 +7,9 @@ const modButton = document.getElementById("modX");
 const plusMinusButton = document.getElementById("plusminus");
 const pieButton = document.getElementById("pie");
 const eButton = document.getElementById("e");
+const sqrtButton = document.getElementById("sqrt");
+const exponentialButton = document.getElementById("exponential");
+const squareButton = document.getElementById("square");
 
 const factorial = (num) =>
   num === 0 || num === 1 ? 1 : num * factorial(num - 1);
@@ -80,4 +83,15 @@ pieButton.addEventListener("click", () => {
 
 eButton.addEventListener("click", () => {
   input.value += 2.718281828;
+});
+
+sqrtButton.addEventListener("click", () => {
+  let num = +input.value;
+  let res = Math.sqrt(num);
+  input.value = res;
+});
+
+squareButton.addEventListener("click", () => {
+  let num = +input.value;
+  input.value = num * num;
 });
