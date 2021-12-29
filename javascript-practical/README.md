@@ -65,4 +65,13 @@ updates for 29-dec:
     - worked with event listeners
     - completed the ui
     - removed all unused variables/repeated statements
+    - learned about ES2020 features
+    - read about dynamic imports
+    - explored functional programming
+    - learnt about currying
+    - implemented higher order functions 
+    - tried mix matching higher order function with closure
+    - learnt about optional chaining/ nullish coesceling
+    - got familiar with pure functions
+    - done memoization for optimization during runtime
     - sent PR for review
