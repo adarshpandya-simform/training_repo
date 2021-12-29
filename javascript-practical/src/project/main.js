@@ -15,7 +15,6 @@ const logButton = document.getElementById("log");
 const inButton = document.getElementById("In");
 const tenExp = document.getElementById("ten-exp");
 const expButton = document.getElementById("exp");
-
 const MC = document.getElementById("clear-memory");
 const MR = document.getElementById("show-memory");
 const MP = document.getElementById("add-memory");
@@ -32,7 +31,6 @@ const factorial = (num) =>
 
 equalButton.addEventListener("click", () => {
   const inputExp = input.value;
-  console.log(inputExp);
   // let's check if it's valid
   if (inputExp) {
     if (inputExp.includes("!")) {
@@ -154,7 +152,6 @@ tenExp.addEventListener("click", () => {
 MP.addEventListener("click", () => {
   num = +input.value;
   memory.push(num);
-  console.log(memory);
 });
 
 MS.addEventListener("click", () => {
@@ -169,7 +166,6 @@ MS.addEventListener("click", () => {
 
 MD.addEventListener("click", () => {
   memory.pop();
-  console.log(memory);
 });
 
 MR.addEventListener("click", () => {
