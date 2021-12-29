@@ -1,7 +1,7 @@
-## Javascript Basics (24-dec,27dec,28-dec)
+## Javascript Basics (24-dec,27dec,28-dec,29-dec)
 
 <hr>
-Started on : 24-12-2021,27,28<br>
+Started on : 24-12-2021,27,28,29<br>
 Mentor : Mitul <br>
 Training Coordinator: Bhumika<br>
 Team Manager : Mehul Pandya
@@ -55,3 +55,14 @@ updates for 28-dec: <br>
     - added pie-button,exp-button,log,sqrt,sqaure buttons
     - evaluated mathematical expressions
     - clear/backspace functionality
+
+updates for 29-dec:
+    
+    - continued with practical
+    - added trignometry functionality
+    - added modx, ceilx, floorx functionality
+    - refactored the code
+    - worked with event listeners
+    - completed the ui
+    - removed all unused variables/repeated statements
+    - sent PR for review
