@@ -12,7 +12,7 @@ const exponentialButton = document.getElementById("exponential");
 const squareButton = document.getElementById("square");
 const divByOne = document.getElementById("div-by-one");
 const logButton = document.getElementById("log");
-const InButton = document.getElementById("In");
+const inButton = document.getElementById("In");
 const tenExp = document.getElementById("ten-exp");
 const expButton = document.getElementById("exp");
 
@@ -141,7 +141,7 @@ logButton.addEventListener("click", () => {
   input.value = Math.log10(num);
 });
 
-InButton.addEventListener("click", () => {
+inButton.addEventListener("click", () => {
   num = +input.value;
   input.value = Math.log(num);
 });
