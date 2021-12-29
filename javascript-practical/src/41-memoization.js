@@ -28,3 +28,23 @@ const memoizedIntoTen = (a) => {
 console.log(memoizedIntoTen(4));
 console.log(memoizedIntoTen(4));
 console.log(memoizedIntoTen(4));
+
+// memoized with closure
+const memoizedIntoTenWithClosure = () => {
+  let cache = {};
+  return (a) => {
+    if (a in cache) {
+      console.log("returned from cache");
+      return cache[a];
+    } else {
+      console.log("memoized function with closure called");
+      cache[a] = a * 10;
+      return cache[a];
+    }
+  };
+};
+
+const mm = memoizedIntoTenWithClosure();
+console.log(mm(15));
+console.log(mm(15));
+console.log(mm(15));
