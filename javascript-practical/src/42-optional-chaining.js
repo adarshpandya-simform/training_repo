@@ -21,6 +21,7 @@ import fetch from "node-fetch";
 })();
 
 // with optional chaining
+// test
 (async () => {
   await fetch("https://randomuser.me/api")
     .then((res) => res.json())
