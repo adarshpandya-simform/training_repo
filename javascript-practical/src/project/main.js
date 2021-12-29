@@ -21,6 +21,8 @@ const MR = document.getElementById("show-memory");
 const MP = document.getElementById("add-memory");
 const MD = document.getElementById("remove-last");
 const MS = document.getElementById("memory-store");
+const trigSelector = document.getElementById("trig");
+const funcSelector = document.getElementById("func");
 
 let memory = [];
 let ms = 0;
@@ -181,4 +183,27 @@ MR.addEventListener("click", () => {
 
 MC.addEventListener("click", () => {
   memory = [];
+});
+
+trigSelector.addEventListener("change", (e) => {
+  let num = +input.value;
+  if (e.target.value === "sin") {
+    input.value = String(Math.sin(Math.PI * (num / 180))).slice(0, 3);
+  } else if (e.target.value === "cos") {
+    input.value = String(Math.cos(Math.PI * (num / 180))).slice(0, 3);
+  } else if (e.target.value === "cot") {
+    input.value = String(
+      Math.sin((Math.PI * (num / 180)) / Math.cos(Math.PI * (num / 180)))
+    ).slice(0, 3);
+  } else if (e.target.value === "tan") {
+    input.value = String(
+      Math.cos((Math.PI * (num / 180)) / Math.sin(Math.PI * (num / 180)))
+    ).slice(0, 3);
+  } else if (e.target.value === "sec") {
+    input.value = String(1 / Math.cos(Math.PI * (num / 180)));
+  } else if (e.target.value === "cosec") {
+    input.value = String(1 / Math.sin(Math.PI * (num / 180)));
+  } else if (e.target.value === "hyp") {
+    input.value = String(Math.hypot(num)).slice(0, 3);
+  }
 });
