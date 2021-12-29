@@ -214,15 +214,12 @@ funcSelector.addEventListener("change", (e) => {
     if (num < 0) {
       num *= -1;
     }
-    input.value = num;
   } else if (e.target.value === "floorX") {
     num = Math.floor(num);
-    input.value = num;
   } else if (e.target.value === "ceilX") {
     num = Math.ceil(num);
-    input.value = num;
   } else if (e.target.value === "randValue") {
     num = input.value + Math.random();
-    input.value = num;
   }
+  input.value = num;
 });
