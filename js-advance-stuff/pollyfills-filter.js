@@ -11,6 +11,13 @@ Array.prototype.customFilter = function (callback) {
 };
 
 // filtering cars whose length > 7
+console.log(`# filtering cars whose length > 7`);
 let newCars = cars.customFilter((car) => car.length > 7);
 
 console.log(newCars);
+
+// filtering cars based on odd index
+console.log(`# filtering cars based on odd index`);
+let newCarsTwo = cars.customFilter((car, index) => index % 2 === 0);
+
+console.log(newCarsTwo);
