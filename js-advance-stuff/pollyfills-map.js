@@ -1,4 +1,4 @@
-//!to run this file: node --experimental-modules --es-module-specifier-resolution=node ./src/31-import-export.js
+//!to run this file: node ./js-advance-stuff/filename.js
 
 let cars = ["audi", "mercedez", "lamborghini", "ferrari"];
 Array.prototype.customMap = function (callback) {
