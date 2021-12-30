@@ -3,7 +3,9 @@ const logoutButton = document.getElementById("logout");
 const username = document.getElementById("username");
 const password = document.getElementById("password");
 
-// localStorage works with multiple tabs, and only gets removed once we remove it. unlike session where the storage gets erased when you close the tab
+// sessionalStorage stores values like localStorage but
+// works only for partcular session
+// i.e won't work with multiple tabs
 
 // on login button click
 loginButton &&
@@ -12,7 +14,7 @@ loginButton &&
 			if (username.value === "simform" && password.value === "123456") {
 				setToken("username", username.value);
 				setToken("isLoggedIn", true);
-				window.location.href = "./localStorage-page.html";
+				window.location.href = "./sessionalStorage-page.html";
 			} else {
 				alert("wrong username or password");
 			}
@@ -26,10 +28,10 @@ logoutButton &&
 	logoutButton.addEventListener("click", () => {
 		setToken("username", "");
 		setToken("isLoggedIn", "");
-		window.location.href = ".	/localStorage-login.html";
+		window.location.href = ".	/sessionalStorage-login.html";
 	});
 
-// function to set values in localStorage
+// function to set values in sessionalStorage
 const setToken = (key, value) => {
-	localStorage.setItem(key, value);
+	sessionStorage.setItem(key, value);
 };

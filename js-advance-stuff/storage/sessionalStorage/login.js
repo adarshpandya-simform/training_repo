@@ -10,11 +10,11 @@ document.addEventListener("DOMContentLoaded", () => {
 		isLoggedIn !== null
 	) {
 		// redirect
-		window.location.href = "./localStorage-page.html";
+		window.location.href = "./sessionalStorage-page.html";
 	}
 });
 
-// getting value from local storage
+// getting value from sessional storage
 const getToken = (key) => {
-	return localStorage.getItem(key);
+	return sessionStorage.getItem(key);
 };
