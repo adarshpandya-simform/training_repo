@@ -1,4 +1,4 @@
-//!to run this file: node ./js-advance-stuff/filename.js
+//!to run this file: node ./js-advance-stuff/pollyfill/filename.js
 
 let nums = [1, 2, 3, 4, 5];
 

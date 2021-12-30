@@ -1,4 +1,4 @@
-//!to run this file: node ./js-advance-stuff/filename.js
+//!to run this file: node ./js-advance-stuff/pollyfill/filename.js
 
 let cars = ["audi", "mercedez", "lamborghini", "ferrari"];
 
