@@ -125,3 +125,10 @@ body{
 .equal{
     background: #90BFE5 !important;
 }
+
+@media (max-width:700px) {
+	.calc-container{
+		height: 100%;
+		width: 100%;
+	}
+}

@@ -12,15 +12,16 @@ const exponentialButton = document.getElementById("exponential");
 const squareButton = document.getElementById("square");
 const divByOne = document.getElementById("div-by-one");
 const logButton = document.getElementById("log");
-const InButton = document.getElementById("In");
+const inButton = document.getElementById("In");
 const tenExp = document.getElementById("ten-exp");
 const expButton = document.getElementById("exp");
-
 const MC = document.getElementById("clear-memory");
 const MR = document.getElementById("show-memory");
 const MP = document.getElementById("add-memory");
 const MD = document.getElementById("remove-last");
 const MS = document.getElementById("memory-store");
+const trigSelector = document.getElementById("trig");
+const funcSelector = document.getElementById("func");
 
 let memory = [];
 let ms = 0;
@@ -30,7 +31,6 @@ const factorial = (num) =>
 
 equalButton.addEventListener("click", () => {
   const inputExp = input.value;
-  console.log(inputExp);
   // let's check if it's valid
   if (inputExp) {
     if (inputExp.includes("!")) {
@@ -139,7 +139,7 @@ logButton.addEventListener("click", () => {
   input.value = Math.log10(num);
 });
 
-InButton.addEventListener("click", () => {
+inButton.addEventListener("click", () => {
   num = +input.value;
   input.value = Math.log(num);
 });
@@ -152,7 +152,6 @@ tenExp.addEventListener("click", () => {
 MP.addEventListener("click", () => {
   num = +input.value;
   memory.push(num);
-  console.log(memory);
 });
 
 MS.addEventListener("click", () => {
@@ -167,7 +166,6 @@ MS.addEventListener("click", () => {
 
 MD.addEventListener("click", () => {
   memory.pop();
-  console.log(memory);
 });
 
 MR.addEventListener("click", () => {
@@ -181,4 +179,43 @@ MR.addEventListener("click", () => {
 
 MC.addEventListener("click", () => {
   memory = [];
+});
+
+trigSelector.addEventListener("change", (e) => {
+  let num = +input.value;
+  if (e.target.value === "sin") {
+    input.value = String(Math.sin(Math.PI * (num / 180))).slice(0, 3);
+  } else if (e.target.value === "cos") {
+    input.value = String(Math.cos(Math.PI * (num / 180))).slice(0, 3);
+  } else if (e.target.value === "cot") {
+    input.value = String(
+      Math.sin((Math.PI * (num / 180)) / Math.cos(Math.PI * (num / 180)))
+    ).slice(0, 3);
+  } else if (e.target.value === "tan") {
+    input.value = String(
+      Math.cos((Math.PI * (num / 180)) / Math.sin(Math.PI * (num / 180)))
+    ).slice(0, 3);
+  } else if (e.target.value === "sec") {
+    input.value = String(1 / Math.cos(Math.PI * (num / 180)));
+  } else if (e.target.value === "cosec") {
+    input.value = String(1 / Math.sin(Math.PI * (num / 180)));
+  } else if (e.target.value === "hyp") {
+    input.value = String(Math.hypot(num)).slice(0, 3);
+  }
+});
+
+funcSelector.addEventListener("change", (e) => {
+  let num = +input.value;
+  if (e.target.value === "modX") {
+    if (num < 0) {
+      num *= -1;
+    }
+  } else if (e.target.value === "floorX") {
+    num = Math.floor(num);
+  } else if (e.target.value === "ceilX") {
+    num = Math.ceil(num);
+  } else if (e.target.value === "randValue") {
+    num = input.value + Math.random();
+  }
+  input.value = num;
 });

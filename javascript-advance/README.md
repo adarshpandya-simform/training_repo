@@ -1,12 +1,7 @@
-
-## Javascript Basics (24-dec,27dec,28-dec)
-
-<hr>
-Started on : 24-12-2021,27,28<br>
-## Javascript Basics (24-dec,27dec,28-dec,29-dec)
+## Javascript Basics (24-dec,27dec)
 
 <hr>
-Started on : 24-12-2021,27,28,29<br>
+Started on : 24-12-2021,27-12-2021<br>
 Mentor : Mitul <br>
 Training Coordinator: Bhumika<br>
 Team Manager : Mehul Pandya
@@ -48,35 +43,3 @@ updates for 27-dec: <br>
     - learnt about `promise.all`
     - implemented tagged-template-literals
     - modified .map() method with prototype
-
-updates for 28-dec: <br>
-
-    - started with practical
-    - understood the basic functionality
-    - completed the markup
-    - completed the styling of project
-    - added JS for functionality
-    - made all basic functionalities work
-    - added pie-button,exp-button,log,sqrt,sqaure buttons
-    - evaluated mathematical expressions
-    - clear/backspace functionality
-
-updates for 29-dec:
-    
-    - continued with practical
-    - added trignometry functionality
-    - added modx, ceilx, floorx functionality
-    - refactored the code
-    - worked with event listeners
-    - completed the ui
-    - removed all unused variables/repeated statements
-    - learned about ES2020 features
-    - read about dynamic imports
-    - explored functional programming
-    - learnt about currying
-    - implemented higher order functions 
-    - tried mix matching higher order function with closure
-    - learnt about optional chaining/ nullish coesceling
-    - got familiar with pure functions
-    - done memoization for optimization during runtime
-    - sent PR for review
