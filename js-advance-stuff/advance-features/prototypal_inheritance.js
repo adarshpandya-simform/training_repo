@@ -9,6 +9,7 @@ let rabbit = {
 	jumps: true,
 };
 
+// prototypal inheritance
 rabbit.__proto__ = animal;
 
 console.log(rabbit.eats);
