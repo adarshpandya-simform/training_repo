@@ -1,5 +1,5 @@
 // !to run this file use following command in your terminal
-// `node ./js-advance-stuff/filename.js`
+// `node ./js-advance-stuff/patterns/filename.js`
 
 /**
  * The Prototype Pattern creates new objects, but rather than creating non-initialized objects it returns objects that are initialized with values it copied from a prototype - or example - object. The Prototype pattern is also referred to as the Properties pattern.

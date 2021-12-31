@@ -1,5 +1,5 @@
 // !to run this file use following command in your terminal
-// `node ./js-advance-stuff/filename.js`
+// `node ./js-advance-stuff/patterns/filename.js`
 
 /* The Singleton Pattern limits the number of instances of a particular object to just one. This single instance is called the singleton. */
 
