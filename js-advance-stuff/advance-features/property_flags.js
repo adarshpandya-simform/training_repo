@@ -7,6 +7,7 @@ let user = {
 	dept: "JS-Frontend",
 };
 
+// get the descriptions of property
 let descriptorName = Object.getOwnPropertyDescriptor(user, "name");
 let descriptorAge = Object.getOwnPropertyDescriptor(user, "age");
 let descriptorDept = Object.getOwnPropertyDescriptor(user, "dept");
@@ -17,6 +18,7 @@ console.log(descriptorDept);
 
 let newUser = {};
 
+// defining properties
 Object.defineProperty(newUser, "name", {
 	value: "Adarsh",
 });
@@ -24,12 +26,14 @@ Object.defineProperty(newUser, "name", {
 let descriptor = Object.getOwnPropertyDescriptor(newUser, "name");
 console.log(descriptor);
 
+// setting writable false
 Object.defineProperty(user, "age", { writable: false });
 
 console.log(user.age);
 user.age = 25; // will not work
 console.log(user.age);
 
+// setting writable true
 Object.defineProperty(user, "age", { writable: true });
 
 user.age = 32;
