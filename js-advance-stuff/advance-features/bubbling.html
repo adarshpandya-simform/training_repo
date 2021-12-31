@@ -5,6 +5,44 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Bubbling</title>
+		<style>
+			div {
+				border: 1px solid red;
+			}
+			a {
+				border: 1px solid green;
+			}
+			p {
+				border: 1px solid blue;
+			}
+		</style>
 	</head>
-	<body></body>
+	<body>
+		<!-- 
+			When an event happens on an element, it first runs the handlers on it, then on its parent, then all the way up on other ancestors.
+		 -->
+		<div onclick="alert('div clicked')">
+			this is simple div with element <kbd> &lt;p&gt; inside</kbd>
+			<p onclick="alert('p clicked')">
+				this is simple p tag with element <kbd>a inside</kbd>
+				<a href="#" onclick="alert('a clicked')">a link</a>
+			</p>
+		</div>
+
+		<br /><br />
+		<span>stop Bubbling upwards with <kbd>event.stopPropagation</kbd></span>
+		<br />
+		<span>now try to click &lt;a&gt; or &lt;p&gt; tag</span>
+		<br /><br />
+
+		<div onclick="alert(`this is div`)">
+			this is simple div with element <kbd>div inside</kbd>
+			<p onclick='alert("this is p");event.stopPropagation()'>
+				this is simple p tag with element <kbd>a inside</kbd>
+				<a href="#" onclick="alert('a clicked');event.stopPropagation()"
+					>now click on link</a
+				>
+			</p>
+		</div>
+	</body>
 </html>
