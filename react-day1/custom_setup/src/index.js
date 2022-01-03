@@ -1,8 +1,17 @@
-import React, { StrictMode } from "react";
+import React, { StrictMode, useState } from "react";
 import ReactDOM from "react-dom";
 
 const App = () => {
-  return <h1>hello world</h1>;
+  const [counter, setCounter] = useState(0);
+  return (
+    <h1
+      onClick={() => {
+        setCounter((prevCount) => prevCount + 1);
+      }}
+    >
+      count : {counter}
+    </h1>
+  );
 };
 
 ReactDOM.render(
