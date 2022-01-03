@@ -4,7 +4,7 @@
   "description": "a custom react app with webpack and babel",
   "main": "index.js",
   "scripts": {
-    "webpack":"webpack",
+    "webpack":"rimraf build && webpack",
     "start": "webpack serve",
     "test": "jest"
   },
