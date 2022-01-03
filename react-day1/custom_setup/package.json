@@ -4,9 +4,10 @@
   "description": "a custom react app with webpack and babel",
   "main": "index.js",
   "scripts": {
-    "webpack": "rimraf build && webpack",
+    "build": "rimraf build && webpack",
     "start": "webpack serve",
-    "test": "jest"
+    "test": "jest",
+    "serve": "serve -s build"
   },
   "author": "adarsh-pandya",
   "license": "ISC",
