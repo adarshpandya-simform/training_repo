@@ -1,5 +1,6 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const { HotModuleReplacementPlugin } = require("webpack");
 // const BundleAnalyzerPlugin =
 // require("webpack-bundle-analyzer").BundleAnalyzerPlugin;
 
@@ -17,6 +18,7 @@ module.exports = {
 		new HtmlWebpackPlugin({
 			template: path.join(__dirname, "src", "index.html"),
 		}),
+		new HotModuleReplacementPlugin(),
 		// new BundleAnalyzerPlugin(),
 	],
 	module: {
