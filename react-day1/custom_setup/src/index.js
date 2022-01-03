@@ -6,6 +6,7 @@ import styles from "./App.module.css";
 
 const App = () => {
 	const [counter, setCounter] = useState(0);
+
 	return (
 		<>
 			<h1
