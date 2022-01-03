@@ -11,7 +11,6 @@ module.exports = {
 	resolve: { modules: [path.resolve(__dirname, "src"), "node_modules"] },
 	devServer: {
 		port: 3000,
-		hot: "only",
 		static: { directory: path.join(__dirname, "src/") },
 	},
 	plugins: [
