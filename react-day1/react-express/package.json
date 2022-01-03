@@ -1,0 +1,7 @@
+{
+  "name": "react-express",
+  "version": "1.0.0",
+  "description": "react-express app",
+  "main": "index.js",
+  "license": "MIT"
+}
