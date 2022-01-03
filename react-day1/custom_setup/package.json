@@ -1,0 +1,11 @@
+{
+  "name": "custom_setup",
+  "version": "0.0.1",
+  "description": "a custom react app with webpack and babel",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "adarsh-pandya",
+  "license": "ISC"
+}
