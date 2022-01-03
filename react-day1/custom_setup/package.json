@@ -4,6 +4,8 @@
   "description": "a custom react app with webpack and babel",
   "main": "index.js",
   "scripts": {
+    "webpack":"webpack",
+    "start": "webpack serve",
     "test": "jest"
   },
   "author": "adarsh-pandya",
