@@ -7,7 +7,9 @@
     "build": "rimraf build && webpack",
     "start": "webpack serve",
     "test": "jest",
-    "serve": "serve -s build"
+    "serve": "serve -s build",
+		"lint": "eslint .",
+		"lint:fix":"eslint . --fix"
   },
   "author": "adarsh-pandya",
   "license": "ISC",
@@ -19,6 +21,8 @@
     "@babel/preset-react": "^7.16.7",
     "babel-loader": "^8.2.3",
     "css-loader": "^6.5.1",
+    "eslint": "^8.6.0",
+    "eslint-plugin-react": "^7.28.0",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.5.0",
     "image-webpack-loader": "^8.0.1",
