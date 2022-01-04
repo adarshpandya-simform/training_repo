@@ -1,0 +1,11 @@
+.main-todo-container{
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.main-todo{
+    margin: 10px 0px;
+    display: flex;
+    padding: 2px;
+    border: 1px solid gray;
+    justify-content: space-between;
+}
