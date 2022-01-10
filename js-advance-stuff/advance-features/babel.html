@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Babel</title>
+	</head>
+	<body>
+		<div id="output"></div>
+		<!-- Load Babel -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.18.1/babel.min.js"></script>
+		<!-- transpiled code-->
+		<script type="text/javascript">
+			var input =
+				'const getMessage = () => "Hello World";document.getElementById("output").innerHTML = getMessage();';
+			var output = Babel.transform(input, { presets: ["es2015"] }).code;
+			console.log(output);
+			let input2 = `[1,2,3,4].forEach(item => console.log(item))`;
+			let output2 = Babel.transform(input2, { presets: ["es2015"] }).code;
+			console.log(output2);
+			eval(output);
+			eval(output2);
+		</script>
+	</body>
+</html>
